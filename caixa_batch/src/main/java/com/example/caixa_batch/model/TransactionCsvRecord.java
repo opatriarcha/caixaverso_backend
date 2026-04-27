@@ -1,4 +1,4 @@
-package com.banking.batch.model;
+package com.example.caixa_batch.model;
 
 import com.opencsv.bean.CsvBindByName;
 import lombok.Data;
