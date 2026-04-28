@@ -1,0 +1,28 @@
+spring:
+  activemq:
+    broker-url: vm://embedded-broker?create=false
+    in-memory: true
+    user:
+    password:
+  jms:
+    template:
+      receive-timeout: 2000
+
+logging:
+  level:
+    org.apache.activemq: INFO
+    org.springframework.jms: INFO
+    com.example: DEBUG
+
+# Configurações bancárias
+banking:
+  transaction:
+    retry-max-attempts: 10
+    queues:
+      transaction: transacao-bancaria.queue
+      transaction-dlq: transacao-bancaria.DLQ
+      fraud-alert: alerta-fraude.queue
+      fraud-alert-dlq: alerta-fraude.DLQ
+    topics:
+      account-events: eventos-conta.topic
+      account-events-dlq: eventos-conta.DLQ

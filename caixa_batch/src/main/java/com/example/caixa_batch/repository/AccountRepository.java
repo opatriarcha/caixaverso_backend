@@ -1,6 +1,6 @@
 package com.example.caixa_batch.repository;
 
-import com.banking.batch.model.Account;
+import com.example.caixa_batch.model.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

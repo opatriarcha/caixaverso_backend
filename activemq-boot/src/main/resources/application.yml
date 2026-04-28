@@ -1,0 +1,14 @@
+spring:
+  activemq:
+    broker-url: vm://embedded-broker?create=false
+    in-memory: true
+    user:
+    password:
+  jms:
+    template:
+      receive-timeout: 2000
+
+logging:
+  level:
+    org.apache.activemq: INFO
+    org.springframework.jms: INFO
